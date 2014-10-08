@@ -1,0 +1,12 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.packt.coverage.MetricsTest" tests="1" failures="0" errors="0" timestamp="2014-03-04T18:39:17" hostname="CCUSISLNB62" time="0.055">
+  <properties/>
+  <testcase name="when_NULLs_RETURNS_zero" classname="com.packt.coverage.MetricsTest" time="0.055"/>
+  <system-out><![CDATA[uncovered line #3
+uncovered line #6
+uncovered line #7
+uncovered line #8
+uncovered line #11
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

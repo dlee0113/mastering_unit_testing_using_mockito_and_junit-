@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'sonar-runner'
+apply plugin: "jacoco"
+
+repositories {
+    flatDir(dir: '../lib', name: 'JUnit Library')
+	mavenCentral()
+}
+
+dependencies {
+   	testCompile'junit:junit:4.11', ':hamcrest-core:1.3'
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination "${buildDir}/jacocoHtml"
+    }
+}
+sonarRunner {
+    sonarProperties {
+        property "sonar.projectName", "CodeQualityChapter06"
+        property "sonar.projectKey", "packt:CodeQualityChapter06"
+        property "sonar.jacoco.reportPath", "${project.buildDir}/jacoco/test.exec"
+    }
+}
