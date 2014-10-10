@@ -17,7 +17,7 @@ public class ParameterizedFactorialTest {
     public static Collection<Object[]> factorialData() {
         return Arrays.asList(new Object[][] {
                 
-                 { 0, 1,3 }, { 1, 1 }, { 2, 2 }, { 3, 6 }, { 4, 24 }, { 5, 120 },{ 6, 720 }  
+                 { 0, 1 }, { 1, 1 }, { 2, 2 }, { 3, 6 }, { 4, 24 }, { 5, 120 },{ 6, 720 }  
            });
     }
     
